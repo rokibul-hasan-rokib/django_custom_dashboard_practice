@@ -1,6 +1,11 @@
 from django.shortcuts import render, redirect
 from .forms import CustomerForm
+from .models import Customer
 
+
+def customer_list(request):
+    customers = Customer.objects.all()
+    return render(request, 'customer/customer_list.html', {'customers': customers})
 
 def add_customer(request):
     if request.method == 'POST':
