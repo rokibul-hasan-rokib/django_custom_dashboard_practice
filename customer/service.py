@@ -31,3 +31,4 @@ def delete_customer(customer_id: int):
     customer = get_customer(customer_id)
     customer.delete()
     return True
+
