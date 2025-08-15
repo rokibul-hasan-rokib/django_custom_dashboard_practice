@@ -17,3 +17,5 @@ def add_customer(request):
         form = CustomerForm()
     
     return render(request, 'customer/add_customer.html', {'form': form})
+
+
