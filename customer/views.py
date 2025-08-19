@@ -44,6 +44,8 @@ def customer_list(request):
     customers = Customer.objects.all()
     return render(request, 'customer/customer_list.html', {'customers': customers})
 
+
+edgaergerg
 def add_customer(request):
     if request.method == 'POST':
         form = CustomerForm(request.POST)
