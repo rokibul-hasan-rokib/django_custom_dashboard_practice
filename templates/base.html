@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Django Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+    {% include "partials/navbar.html" %}
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
